@@ -2,6 +2,7 @@
 
 My preferred [Oh My Zsh](https://ohmyz.sh/) theme, derived from [Bira](https://github.com/ohmyzsh/ohmyzsh/blob/master/themes/bira.zsh-theme).
 
+Enable the virtualenv plugin in .zhrc to also have support for virtual environments. For better support of pyenv and conda, I modified the virtualenv plugin.
 
 
 ## Instructions

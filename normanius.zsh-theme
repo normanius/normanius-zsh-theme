@@ -27,7 +27,11 @@ local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 local current_dir='%{$terminfo[bold]$fg[blue]%}%~ %{$reset_color%}'
 local git_branch='$(git_prompt_info)'
 local rvm_ruby='$(ruby_prompt_info)'
-local venv_prompt='$(virtualenv_prompt_info)'
+# This requires the virtualenv plugin to be activated (see .zshrc).
+# Note that virtualenv_conda_prompt_info() is available in a
+# modified version of this plugin.
+#local venv_prompt='$(virtualenv_prompt_info)'
+local venv_prompt='$(virtualenv_conda_prompt_info)'
 
 if [ "$multi_line" = true ] ; then
     PROMPT="╭─${user_host}${current_dir}${rvm_ruby}${git_branch}${venv_prompt}
